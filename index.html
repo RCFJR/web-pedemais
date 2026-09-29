@@ -1,0 +1,431 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pede+ — O cardápio digital que veste sua marca</title>
+  <meta
+    name="description"
+    content="Plataforma de cardápio digital personalizável para restaurantes. Logo, paleta de cores e link exclusivo, em minutos. Sem mensalidade, sem surpresas."
+  />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Geist:wght@100;200;300;400;500;600;700;800;900&family=Geist+Mono:wght@400;500;600;700&display=swap"
+    rel="preload"
+    as="style"
+  />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Geist:wght@100;200;300;400;500;600;700;800;900&family=Geist+Mono:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="nav-container">
+      <div class="nav-logo">Pede<span class="accent-strong">+</span></div>
+      <ul class="nav-links">
+        <li><a href="#como-funciona">Como funciona</a></li>
+        <li><a href="#recursos">Recursos</a></li>
+        <li><a href="#planos">Planos</a></li>
+        <li><a href="#segmentos">Para seu restaurante</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button id="theme-toggle" class="theme-toggle" aria-label="Alternar tema">
+          <svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display: none;">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+        <a href="#cta" class="btn btn-primary btn-sm">Criar conta</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="hero" class="hero">
+    <div class="hero-container">
+      <div class="hero-content">
+        <h1>O cardápio digital que veste a marca do seu restaurante</h1>
+        <p class="hero-subtitle">Personalize logo, cores e link exclusivo em minutos. Sem desenvolvimento, sem complicação.</p>
+        <a href="#cta" class="btn btn-primary btn-large">Começar grátis agora</a>
+        <p class="hero-cta-note">Sem cartão de crédito. Cria sua conta em 2 minutos.</p>
+      </div>
+
+      <!-- Interactive Demo Widget -->
+      <div class="demo-widget">
+        <div class="demo-tabs">
+          <button class="demo-tab active" data-restaurant="0">Hamburgueria do Luiz</button>
+          <button class="demo-tab" data-restaurant="1">Pizzaria Napoli</button>
+          <button class="demo-tab" data-restaurant="2">Café da Ana</button>
+          <button class="demo-tab" data-restaurant="3">Sushi Kaze</button>
+        </div>
+
+        <div class="demo-mockup" style="--accent-color: var(--accent); --monogram: 'L';">
+          <div class="mockup-header">
+            <div class="mockup-monogram"></div>
+            <h2>Cardápio</h2>
+          </div>
+          <div class="mockup-items">
+            <div class="mockup-item">
+              <div class="item-name">Hamburger Premium</div>
+              <div class="item-price">R$ 28,50</div>
+            </div>
+            <div class="mockup-item">
+              <div class="item-name">Batata Frita</div>
+              <div class="item-price">R$ 12,00</div>
+            </div>
+            <div class="mockup-item">
+              <div class="item-name">Refrigerante 1L</div>
+              <div class="item-price">R$ 8,90</div>
+            </div>
+          </div>
+          <div class="mockup-link">
+            <span>pede.plus/hamburgueria-do-luiz</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Como Funciona Section -->
+  <section id="como-funciona" class="como-funciona">
+    <div class="section-container">
+      <h2>Como funciona em 3 passos</h2>
+
+      <div class="steps">
+        <div class="step">
+          <div class="step-number">1</div>
+          <h3>Crie sua conta</h3>
+          <p>Login com Google em segundos. Sem complicação, sem senha para lembrar.</p>
+        </div>
+
+        <div class="step-divider"></div>
+
+        <div class="step">
+          <div class="step-number">2</div>
+          <h3>Personalize seu cardápio</h3>
+          <p>Adicione logo, escolha 3 cores e crie um link exclusivo. Tudo em minutos, com preview em tempo real.</p>
+        </div>
+
+        <div class="step-divider"></div>
+
+        <div class="step">
+          <div class="step-number">3</div>
+          <h3>Compartilhe e receba pedidos</h3>
+          <p>Link para delivery, QR Code para mesa, ou compartilhe no WhatsApp. Tudo pronto. Os pedidos chegam no seu painel.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Recursos Section -->
+  <section id="recursos" class="recursos">
+    <div class="section-container">
+      <h2>Recursos completos, sem pegadinha</h2>
+      <p class="section-subtitle">Tudo que você precisa para rodar seu restaurante digital, mesmo no plano grátis.</p>
+
+      <div class="recursos-grid">
+        <!-- Personalização -->
+        <div class="recurso-card">
+          <div class="recurso-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+              <circle cx="8.5" cy="8.5" r="1.5"></circle>
+              <polyline points="21 15 16 10 5 21"></polyline>
+            </svg>
+          </div>
+          <h3>Marca própria</h3>
+          <p>Logo, 3 cores de destaque e link exclusivo. Seu cardápio, sua identidade. Mesmo no plano grátis.</p>
+        </div>
+
+        <!-- Cardápio ilimitado -->
+        <div class="recurso-card">
+          <div class="recurso-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M6 9l6 6 6-6"></path>
+              <path d="M6 15l6 6 6-6"></path>
+            </svg>
+          </div>
+          <h3>Cardápio ilimitado</h3>
+          <p>Quantos produtos e categorias quiser. Sem limites de itens, mesmo no Free.</p>
+        </div>
+
+        <!-- Monte o seu -->
+        <div class="recurso-card">
+          <div class="recurso-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 2v20M2 12h20"></path>
+            </svg>
+          </div>
+          <h3>Monte o seu</h3>
+          <p>Pizzas, bolos, lanches — com preço dinâmico que muda em tempo real conforme o cliente monta.</p>
+        </div>
+
+        <!-- QR Code e comandas -->
+        <div class="recurso-card">
+          <div class="recurso-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="3" y="3" width="7" height="7"></rect>
+              <rect x="14" y="3" width="7" height="7"></rect>
+              <rect x="3" y="14" width="7" height="7"></rect>
+              <rect x="14" y="14" width="7" height="7"></rect>
+              <rect x="5" y="5" width="3" height="3"></rect>
+              <rect x="16" y="5" width="3" height="3"></rect>
+              <rect x="5" y="16" width="3" height="3"></rect>
+              <rect x="16" y="16" width="3" height="3"></rect>
+            </svg>
+          </div>
+          <h3>QR Code por mesa</h3>
+          <p>Pedidos na mesa acumulam em uma única comanda. Feche a conta quando quiser, com ou sem taxa de serviço.</p>
+        </div>
+
+        <!-- Caixa e divisão -->
+        <div class="recurso-card">
+          <div class="recurso-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="8" y1="12" x2="16" y2="12"></line>
+              <polyline points="12 8 16 12 12 16"></polyline>
+              <path d="M12 2a10 10 0 1 1 0 20 10 10 0 0 1 0-20Z"></path>
+            </svg>
+          </div>
+          <h3>Caixa + divisão</h3>
+          <p>Divida a conta por 2, 3, 4 pessoas na hora do fechamento. Transparência total.</p>
+        </div>
+
+        <!-- Mensagens e atendimento -->
+        <div class="recurso-card">
+          <div class="recurso-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+            </svg>
+          </div>
+          <h3>Central de atendimento</h3>
+          <p>Mensagens e reclamações dos clientes em um único lugar. Sem sair da plataforma.</p>
+        </div>
+
+        <!-- Estoque (Premium) -->
+        <div class="recurso-card">
+          <div class="recurso-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="3" y="5" width="18" height="2"></rect>
+              <rect x="3" y="9" width="18" height="2"></rect>
+              <rect x="3" y="13" width="18" height="2"></rect>
+              <rect x="3" y="17" width="18" height="2"></rect>
+              <line x1="12" y1="5" x2="12" y2="21"></line>
+            </svg>
+          </div>
+          <h3>Controle de estoque</h3>
+          <p><span class="badge">Premium</span> Acompanhe quantidades, alertas de baixo estoque e esgotamento automático.</p>
+        </div>
+
+        <!-- Financeiro (Premium) -->
+        <div class="recurso-card">
+          <div class="recurso-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="1"></circle>
+              <path d="M12 1v6m0 6v6"></path>
+              <path d="M4.22 4.22l4.24 4.24m5.08 0l4.24-4.24"></path>
+              <path d="M1 12h6m6 0h6"></path>
+              <path d="M4.22 19.78l4.24-4.24m5.08 0l4.24 4.24"></path>
+            </svg>
+          </div>
+          <h3>Financeiro</h3>
+          <p><span class="badge">Premium</span> Contas a pagar e receber, despesas recorrentes, saldo do mês.</p>
+        </div>
+
+        <!-- Múltiplos usuários -->
+        <div class="recurso-card">
+          <div class="recurso-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+              <circle cx="9" cy="7" r="4"></circle>
+              <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+              <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+            </svg>
+          </div>
+          <h3>Equipe</h3>
+          <p>Proprietário, Gerente, Atendente — cada um vê o que precisa. Sem expor dados sensíveis.</p>
+        </div>
+
+        <!-- Modo claro/escuro -->
+        <div class="recurso-card">
+          <div class="recurso-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+          </div>
+          <h3>Tema claro/escuro</h3>
+          <p>Escolha qual tema você prefere. A mesma beleza em qualquer tela.</p>
+        </div>
+
+        <!-- Sem app -->
+        <div class="recurso-card">
+          <div class="recurso-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="1"></circle>
+              <path d="M12 1v6m0 6v6"></path>
+              <rect x="3" y="6" width="18" height="12" rx="2"></rect>
+            </svg>
+          </div>
+          <h3>Sem app para instalar</h3>
+          <p>Cardápio abre direto no navegador. Compartilhe um link, seus clientes abrem e pronto.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Segmentos Section -->
+  <section id="segmentos" class="segmentos">
+    <div class="section-container">
+      <h2>Qualquer restaurante é bem-vindo</h2>
+      <p class="section-subtitle">Pede+ funciona para qualquer tipo de negócio. Aproveita a escala da plataforma e o poder de customização.</p>
+
+      <div class="segmentos-grid">
+        <div class="segmento-card">
+          <h3>🍔 Hamburgueria</h3>
+          <p>Combos, extras customizáveis, promoções do dia — tudo com preço em tempo real.</p>
+        </div>
+        <div class="segmento-card">
+          <h3>🍕 Pizzaria</h3>
+          <p>"Monte a sua" com sabores, tamanhos e borda — cada escolha muda o preço ao vivo.</p>
+        </div>
+        <div class="segmento-card">
+          <h3>☕ Cafeteria</h3>
+          <p>Bebidas, bolos, lanches — cardápio visual que faz água na boca mesmo pela foto.</p>
+        </div>
+        <div class="segmento-card">
+          <h3>🍣 Sushi Bar</h3>
+          <p>Cardápios longos ficam organizados. Controle de estoque garante não vender o que falta.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Planos Section -->
+  <section id="planos" class="planos">
+    <div class="section-container">
+      <h2>Planos para todo tamanho</h2>
+      <p class="section-subtitle">Comece grátis. Evolua quando precisar. Sem contrato, sem burocracia, sem surpresas.</p>
+
+      <div class="planos-grid">
+        <!-- Free -->
+        <div class="plano-card">
+          <div class="plano-header">
+            <h3>Free</h3>
+            <div class="plano-price">Grátis</div>
+          </div>
+          <div class="plano-cta">
+            <a href="#cta" class="btn btn-secondary btn-full">Começar grátis</a>
+          </div>
+          <ul class="plano-features">
+            <li>✓ Personalização completa (logo, cores, link)</li>
+            <li>✓ Até 100 pedidos/mês</li>
+            <li>✓ Até 10 mesas/comandas</li>
+            <li>✓ Cardápio ilimitado</li>
+            <li>✓ "Monte o seu" ilimitado</li>
+            <li>✓ Pedidos por link e QR Code</li>
+            <li>✓ Central de mensagens</li>
+            <li>✗ Estoque e financeiro</li>
+          </ul>
+          <p class="plano-note">Ideal para testar e pequenos restaurantes.</p>
+        </div>
+
+        <!-- Starter -->
+        <div class="plano-card">
+          <div class="plano-highlight">Popular</div>
+          <div class="plano-header">
+            <h3>Starter</h3>
+            <div class="plano-price">
+              <span class="plano-price-value">R$ 39,90</span>
+              <span class="plano-price-unit">/mês</span>
+            </div>
+          </div>
+          <div class="plano-cta">
+            <a href="#cta" class="btn btn-primary btn-full">Começar agora</a>
+          </div>
+          <ul class="plano-features">
+            <li>✓ Personalização completa (logo, cores, link)</li>
+            <li>✓ Até 1.000 pedidos/mês</li>
+            <li>✓ Até 50 mesas/comandas</li>
+            <li>✓ Cardápio ilimitado</li>
+            <li>✓ "Monte o seu" ilimitado</li>
+            <li>✓ Pedidos por link e QR Code</li>
+            <li>✓ Central de mensagens</li>
+            <li>✗ Estoque e financeiro</li>
+          </ul>
+          <p class="plano-note">Melhor para restaurantes em crescimento.</p>
+        </div>
+
+        <!-- Premium -->
+        <div class="plano-card">
+          <div class="plano-header">
+            <h3>Premium</h3>
+            <div class="plano-price">
+              <span class="plano-price-value">R$ 89,90</span>
+              <span class="plano-price-unit">/mês</span>
+            </div>
+          </div>
+          <div class="plano-cta">
+            <a href="#cta" class="btn btn-secondary btn-full">Começar agora</a>
+          </div>
+          <ul class="plano-features">
+            <li>✓ Personalização completa (logo, cores, link)</li>
+            <li>✓ Pedidos ilimitados</li>
+            <li>✓ Mesas/comandas ilimitadas</li>
+            <li>✓ Cardápio ilimitado</li>
+            <li>✓ "Monte o seu" ilimitado</li>
+            <li>✓ Pedidos por link e QR Code</li>
+            <li>✓ Central de mensagens</li>
+            <li>✓ Estoque e financeiro</li>
+          </ul>
+          <p class="plano-note">Completo. Sem limitações.</p>
+        </div>
+      </div>
+
+      <div class="planos-note">
+        <p><strong>A personalização visual é igual em todos os planos.</strong> O que muda é o volume de pedidos, mesas e acesso a estoque/financeiro. Comece grátis, faça upgrade quando precisar — sem pró-rata, sem complicação.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Final Section -->
+  <section id="cta" class="cta-final">
+    <div class="section-container">
+      <h2>Pronto para começar?</h2>
+      <p>Crie seu cardápio digital em 2 minutos. Grátis, sem cartão de crédito.</p>
+      <div class="cta-buttons">
+        <a href="#entrar" class="btn btn-primary btn-large">Criar minha conta agora</a>
+        <a href="#" class="btn btn-secondary btn-large">Conversar com suporte</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <div class="footer-logo">Pede<span class="accent-strong">+</span></div>
+          <p>O cardápio digital que veste sua marca.</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Pede+. Todos os direitos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
