@@ -70,6 +70,17 @@ A landing usa as mesmas cores e tipografia do app Pede+:
 - Links âncora internos (`#como-funciona`, `#recursos`, etc.) fazem scroll suave.
 - Fallback para navegadores que não suportam `behavior: "smooth"`.
 
+## i18n (pt-BR / en)
+
+Multilinguagem em JS puro, sem build. Seletor **PT | EN** no nav (`.lang-switcher`, com `aria-pressed`).
+
+- **Marcação (`index.html`)**: texto traduzível usa `data-i18n="chave"` (aplicado via `textContent`); atributos usam `data-i18n-attr="atributo:chave"` (vários separados por `;`, ex.: `aria-label`, `content` da meta description). `data-i18n-html` faz o texto ser aplicado via `innerHTML` — só para chaves com HTML estático e confiável. O texto pt-BR permanece no HTML como fallback sem JS.
+- **Dicionário (`script.js`)**: `I18N = { "pt-BR": {...}, "en": {...} }`. Cobre também `<title>`, meta description e os textos do widget do hero (`demo.r{i}.name|slug|i{j}.name`; preços são números em `RESTAURANTS`, formatados por idioma, moeda sempre R$).
+- **Detecção**: `localStorage("pede-lang")` → `navigator.language` (`pt*` → pt-BR, `en*` → en) → pt-BR. Ao trocar: atualiza `<html lang>`, título, meta description, salva a preferência e re-renderiza o widget.
+- **Nova chave**: adicionar `data-i18n="secao.chave"` no HTML e a chave em **todos** os idiomas do `I18N`.
+- **Novo idioma**: adicionar o código em `SUPPORTED_LANGS`, um bloco em `I18N` (e `PRICE_LOCALES`), um botão `.lang-btn[data-lang="xx"]` no `.lang-switcher` (com `data-i18n-attr="aria-label:nav.langXx"`) e ajustar `detectLang()` se quiser detecção automática.
+- **Verificação**: `node landingPage/check-i18n.js` compara todas as chaves do HTML (e as dinâmicas do widget) com cada idioma e falha se houver chave ausente.
+
 ## Responsividade
 
 - **Mobile-first**: Layout em coluna única até 640px.
@@ -156,8 +167,8 @@ A landing promete apenas recursos que **existem de verdade** no app Pede+:
 2. Suporta tema claro e escuro — atualizar ambos os blocos.
 
 ### Trocar exemplos de restaurantes
-1. Editar array `RESTAURANTS` em `script.js`.
-2. Cada restaurante tem: `name`, `slug`, `initials`, `color`, `items`.
+1. Editar array `RESTAURANTS` em `script.js` (`initials`, `color`, `prices`).
+2. Nomes, slugs e itens ficam no dicionário `I18N` (chaves `demo.r{i}...`), em todos os idiomas.
 
 ### Adicionar novas seções
 1. Adicionar `<section id="...">` em `index.html`.

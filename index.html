@@ -3,9 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Pede+ — O cardápio digital que veste sua marca</title>
+  <title data-i18n="meta.title">Pede+ — O cardápio digital que veste sua marca</title>
   <meta
     name="description"
+    data-i18n-attr="content:meta.description"
     content="Plataforma de cardápio digital personalizável para restaurantes. Logo, paleta de cores e link exclusivo, em minutos. Sem mensalidade, sem surpresas."
   />
   <link
@@ -25,13 +26,18 @@
     <div class="nav-container">
       <div class="nav-logo">Pede<span class="accent-strong">+</span></div>
       <ul class="nav-links">
-        <li><a href="#como-funciona">Como funciona</a></li>
-        <li><a href="#recursos">Recursos</a></li>
-        <li><a href="#planos">Planos</a></li>
-        <li><a href="#segmentos">Para seu restaurante</a></li>
+        <li><a href="#como-funciona" data-i18n="nav.how">Como funciona</a></li>
+        <li><a href="#recursos" data-i18n="nav.features">Recursos</a></li>
+        <li><a href="#planos" data-i18n="nav.plans">Planos</a></li>
+        <li><a href="#segmentos" data-i18n="nav.segments">Para seu restaurante</a></li>
       </ul>
       <div class="nav-actions">
-        <button id="theme-toggle" class="theme-toggle" aria-label="Alternar tema">
+        <div class="lang-switcher" role="group" aria-label="Idioma" data-i18n-attr="aria-label:nav.language">
+          <button type="button" class="lang-btn" data-lang="pt-BR" lang="pt-BR" aria-pressed="true" aria-label="Português (Brasil)" data-i18n-attr="aria-label:nav.langPt">PT</button>
+          <span class="lang-sep" aria-hidden="true">|</span>
+          <button type="button" class="lang-btn" data-lang="en" lang="en" aria-pressed="false" aria-label="English" data-i18n-attr="aria-label:nav.langEn">EN</button>
+        </div>
+        <button id="theme-toggle" class="theme-toggle" aria-label="Alternar tema" data-i18n-attr="aria-label:nav.themeToggle">
           <svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
             <circle cx="12" cy="12" r="5"></circle>
             <line x1="12" y1="1" x2="12" y2="3"></line>
@@ -47,7 +53,7 @@
             <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
           </svg>
         </button>
-        <a href="#cta" class="btn btn-primary btn-sm">Criar conta</a>
+        <a href="#cta" class="btn btn-primary btn-sm" data-i18n="nav.signup">Criar conta</a>
       </div>
     </div>
   </nav>
@@ -56,25 +62,25 @@
   <section id="hero" class="hero">
     <div class="hero-container">
       <div class="hero-content">
-        <h1>O cardápio digital que veste a marca do seu restaurante</h1>
-        <p class="hero-subtitle">Personalize logo, cores e link exclusivo em minutos. Sem desenvolvimento, sem complicação.</p>
-        <a href="#cta" class="btn btn-primary btn-large">Começar grátis agora</a>
-        <p class="hero-cta-note">Sem cartão de crédito. Cria sua conta em 2 minutos.</p>
+        <h1 data-i18n="hero.title">O cardápio digital que veste a marca do seu restaurante</h1>
+        <p class="hero-subtitle" data-i18n="hero.subtitle">Personalize logo, cores e link exclusivo em minutos. Sem desenvolvimento, sem complicação.</p>
+        <a href="#cta" class="btn btn-primary btn-large" data-i18n="hero.cta">Começar grátis agora</a>
+        <p class="hero-cta-note" data-i18n="hero.note">Sem cartão de crédito. Cria sua conta em 2 minutos.</p>
       </div>
 
       <!-- Interactive Demo Widget -->
       <div class="demo-widget">
         <div class="demo-tabs">
-          <button class="demo-tab active" data-restaurant="0">Hamburgueria do Luiz</button>
-          <button class="demo-tab" data-restaurant="1">Pizzaria Napoli</button>
-          <button class="demo-tab" data-restaurant="2">Café da Ana</button>
-          <button class="demo-tab" data-restaurant="3">Sushi Kaze</button>
+          <button class="demo-tab active" data-restaurant="0" data-i18n="demo.r0.name">Hamburgueria do Luiz</button>
+          <button class="demo-tab" data-restaurant="1" data-i18n="demo.r1.name">Pizzaria Napoli</button>
+          <button class="demo-tab" data-restaurant="2" data-i18n="demo.r2.name">Café da Ana</button>
+          <button class="demo-tab" data-restaurant="3" data-i18n="demo.r3.name">Sushi Kaze</button>
         </div>
 
         <div class="demo-mockup" style="--accent-color: var(--accent); --monogram: 'L';">
           <div class="mockup-header">
             <div class="mockup-monogram"></div>
-            <h2>Cardápio</h2>
+            <h2 data-i18n="demo.menu">Cardápio</h2>
           </div>
           <div class="mockup-items">
             <div class="mockup-item">
@@ -101,29 +107,29 @@
   <!-- Como Funciona Section -->
   <section id="como-funciona" class="como-funciona">
     <div class="section-container">
-      <h2>Como funciona em 3 passos</h2>
+      <h2 data-i18n="how.title">Como funciona em 3 passos</h2>
 
       <div class="steps">
         <div class="step">
           <div class="step-number">1</div>
-          <h3>Crie sua conta</h3>
-          <p>Login com Google em segundos. Sem complicação, sem senha para lembrar.</p>
+          <h3 data-i18n="how.s1.title">Crie sua conta</h3>
+          <p data-i18n="how.s1.text">Login com Google em segundos. Sem complicação, sem senha para lembrar.</p>
         </div>
 
         <div class="step-divider"></div>
 
         <div class="step">
           <div class="step-number">2</div>
-          <h3>Personalize seu cardápio</h3>
-          <p>Adicione logo, escolha 3 cores e crie um link exclusivo. Tudo em minutos, com preview em tempo real.</p>
+          <h3 data-i18n="how.s2.title">Personalize seu cardápio</h3>
+          <p data-i18n="how.s2.text">Adicione logo, escolha 3 cores e crie um link exclusivo. Tudo em minutos, com preview em tempo real.</p>
         </div>
 
         <div class="step-divider"></div>
 
         <div class="step">
           <div class="step-number">3</div>
-          <h3>Compartilhe e receba pedidos</h3>
-          <p>Link para delivery, QR Code para mesa, ou compartilhe no WhatsApp. Tudo pronto. Os pedidos chegam no seu painel.</p>
+          <h3 data-i18n="how.s3.title">Compartilhe e receba pedidos</h3>
+          <p data-i18n="how.s3.text">Link para delivery, QR Code para mesa, ou compartilhe no WhatsApp. Tudo pronto. Os pedidos chegam no seu painel.</p>
         </div>
       </div>
     </div>
@@ -132,8 +138,8 @@
   <!-- Recursos Section -->
   <section id="recursos" class="recursos">
     <div class="section-container">
-      <h2>Recursos completos, sem pegadinha</h2>
-      <p class="section-subtitle">Tudo que você precisa para rodar seu restaurante digital, mesmo no plano grátis.</p>
+      <h2 data-i18n="feat.title">Recursos completos, sem pegadinha</h2>
+      <p class="section-subtitle" data-i18n="feat.subtitle">Tudo que você precisa para rodar seu restaurante digital, mesmo no plano grátis.</p>
 
       <div class="recursos-grid">
         <!-- Personalização -->
@@ -145,8 +151,8 @@
               <polyline points="21 15 16 10 5 21"></polyline>
             </svg>
           </div>
-          <h3>Marca própria</h3>
-          <p>Logo, 3 cores de destaque e link exclusivo. Seu cardápio, sua identidade. Mesmo no plano grátis.</p>
+          <h3 data-i18n="feat.brand.title">Marca própria</h3>
+          <p data-i18n="feat.brand.text">Logo, 3 cores de destaque e link exclusivo. Seu cardápio, sua identidade. Mesmo no plano grátis.</p>
         </div>
 
         <!-- Cardápio ilimitado -->
@@ -157,8 +163,8 @@
               <path d="M6 15l6 6 6-6"></path>
             </svg>
           </div>
-          <h3>Cardápio ilimitado</h3>
-          <p>Quantos produtos e categorias quiser. Sem limites de itens, mesmo no Free.</p>
+          <h3 data-i18n="feat.unlimited.title">Cardápio ilimitado</h3>
+          <p data-i18n="feat.unlimited.text">Quantos produtos e categorias quiser. Sem limites de itens, mesmo no Free.</p>
         </div>
 
         <!-- Monte o seu -->
@@ -168,8 +174,8 @@
               <path d="M12 2v20M2 12h20"></path>
             </svg>
           </div>
-          <h3>Monte o seu</h3>
-          <p>Pizzas, bolos, lanches — com preço dinâmico que muda em tempo real conforme o cliente monta.</p>
+          <h3 data-i18n="feat.build.title">Monte o seu</h3>
+          <p data-i18n="feat.build.text">Pizzas, bolos, lanches — com preço dinâmico que muda em tempo real conforme o cliente monta.</p>
         </div>
 
         <!-- QR Code e comandas -->
@@ -186,8 +192,8 @@
               <rect x="16" y="16" width="3" height="3"></rect>
             </svg>
           </div>
-          <h3>QR Code por mesa</h3>
-          <p>Pedidos na mesa acumulam em uma única comanda. Feche a conta quando quiser, com ou sem taxa de serviço.</p>
+          <h3 data-i18n="feat.qr.title">QR Code por mesa</h3>
+          <p data-i18n="feat.qr.text">Pedidos na mesa acumulam em uma única comanda. Feche a conta quando quiser, com ou sem taxa de serviço.</p>
         </div>
 
         <!-- Caixa e divisão -->
@@ -199,8 +205,8 @@
               <path d="M12 2a10 10 0 1 1 0 20 10 10 0 0 1 0-20Z"></path>
             </svg>
           </div>
-          <h3>Caixa + divisão</h3>
-          <p>Divida a conta por 2, 3, 4 pessoas na hora do fechamento. Transparência total.</p>
+          <h3 data-i18n="feat.cashier.title">Caixa + divisão</h3>
+          <p data-i18n="feat.cashier.text">Divida a conta por 2, 3, 4 pessoas na hora do fechamento. Transparência total.</p>
         </div>
 
         <!-- Mensagens e atendimento -->
@@ -210,8 +216,8 @@
               <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
             </svg>
           </div>
-          <h3>Central de atendimento</h3>
-          <p>Mensagens e reclamações dos clientes em um único lugar. Sem sair da plataforma.</p>
+          <h3 data-i18n="feat.support.title">Central de atendimento</h3>
+          <p data-i18n="feat.support.text">Mensagens e reclamações dos clientes em um único lugar. Sem sair da plataforma.</p>
         </div>
 
         <!-- Estoque (Premium) -->
@@ -225,8 +231,8 @@
               <line x1="12" y1="5" x2="12" y2="21"></line>
             </svg>
           </div>
-          <h3>Controle de estoque</h3>
-          <p><span class="badge">Premium</span> Acompanhe quantidades, alertas de baixo estoque e esgotamento automático.</p>
+          <h3 data-i18n="feat.stock.title">Controle de estoque</h3>
+          <p><span class="badge" data-i18n="badge.premium">Premium</span> <span data-i18n="feat.stock.text">Acompanhe quantidades, alertas de baixo estoque e esgotamento automático.</span></p>
         </div>
 
         <!-- Financeiro (Premium) -->
@@ -240,8 +246,8 @@
               <path d="M4.22 19.78l4.24-4.24m5.08 0l4.24 4.24"></path>
             </svg>
           </div>
-          <h3>Financeiro</h3>
-          <p><span class="badge">Premium</span> Contas a pagar e receber, despesas recorrentes, saldo do mês.</p>
+          <h3 data-i18n="feat.finance.title">Financeiro</h3>
+          <p><span class="badge" data-i18n="badge.premium">Premium</span> <span data-i18n="feat.finance.text">Contas a pagar e receber, despesas recorrentes, saldo do mês.</span></p>
         </div>
 
         <!-- Múltiplos usuários -->
@@ -254,8 +260,8 @@
               <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
             </svg>
           </div>
-          <h3>Equipe</h3>
-          <p>Proprietário, Gerente, Atendente — cada um vê o que precisa. Sem expor dados sensíveis.</p>
+          <h3 data-i18n="feat.team.title">Equipe</h3>
+          <p data-i18n="feat.team.text">Proprietário, Gerente, Atendente — cada um vê o que precisa. Sem expor dados sensíveis.</p>
         </div>
 
         <!-- Modo claro/escuro -->
@@ -265,8 +271,8 @@
               <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
             </svg>
           </div>
-          <h3>Tema claro/escuro</h3>
-          <p>Escolha qual tema você prefere. A mesma beleza em qualquer tela.</p>
+          <h3 data-i18n="feat.theme.title">Tema claro/escuro</h3>
+          <p data-i18n="feat.theme.text">Escolha qual tema você prefere. A mesma beleza em qualquer tela.</p>
         </div>
 
         <!-- Sem app -->
@@ -278,8 +284,8 @@
               <rect x="3" y="6" width="18" height="12" rx="2"></rect>
             </svg>
           </div>
-          <h3>Sem app para instalar</h3>
-          <p>Cardápio abre direto no navegador. Compartilhe um link, seus clientes abrem e pronto.</p>
+          <h3 data-i18n="feat.noapp.title">Sem app para instalar</h3>
+          <p data-i18n="feat.noapp.text">Cardápio abre direto no navegador. Compartilhe um link, seus clientes abrem e pronto.</p>
         </div>
       </div>
     </div>
@@ -288,25 +294,25 @@
   <!-- Segmentos Section -->
   <section id="segmentos" class="segmentos">
     <div class="section-container">
-      <h2>Qualquer restaurante é bem-vindo</h2>
-      <p class="section-subtitle">Pede+ funciona para qualquer tipo de negócio. Aproveita a escala da plataforma e o poder de customização.</p>
+      <h2 data-i18n="seg.title">Qualquer restaurante é bem-vindo</h2>
+      <p class="section-subtitle" data-i18n="seg.subtitle">Pede+ funciona para qualquer tipo de negócio. Aproveita a escala da plataforma e o poder de customização.</p>
 
       <div class="segmentos-grid">
         <div class="segmento-card">
-          <h3>🍔 Hamburgueria</h3>
-          <p>Combos, extras customizáveis, promoções do dia — tudo com preço em tempo real.</p>
+          <h3 data-i18n="seg.burger.title">🍔 Hamburgueria</h3>
+          <p data-i18n="seg.burger.text">Combos, extras customizáveis, promoções do dia — tudo com preço em tempo real.</p>
         </div>
         <div class="segmento-card">
-          <h3>🍕 Pizzaria</h3>
-          <p>"Monte a sua" com sabores, tamanhos e borda — cada escolha muda o preço ao vivo.</p>
+          <h3 data-i18n="seg.pizza.title">🍕 Pizzaria</h3>
+          <p data-i18n="seg.pizza.text">"Monte a sua" com sabores, tamanhos e borda — cada escolha muda o preço ao vivo.</p>
         </div>
         <div class="segmento-card">
-          <h3>☕ Cafeteria</h3>
-          <p>Bebidas, bolos, lanches — cardápio visual que faz água na boca mesmo pela foto.</p>
+          <h3 data-i18n="seg.cafe.title">☕ Cafeteria</h3>
+          <p data-i18n="seg.cafe.text">Bebidas, bolos, lanches — cardápio visual que faz água na boca mesmo pela foto.</p>
         </div>
         <div class="segmento-card">
-          <h3>🍣 Sushi Bar</h3>
-          <p>Cardápios longos ficam organizados. Controle de estoque garante não vender o que falta.</p>
+          <h3 data-i18n="seg.sushi.title">🍣 Sushi Bar</h3>
+          <p data-i18n="seg.sushi.text">Cardápios longos ficam organizados. Controle de estoque garante não vender o que falta.</p>
         </div>
       </div>
     </div>
@@ -315,56 +321,56 @@
   <!-- Planos Section -->
   <section id="planos" class="planos">
     <div class="section-container">
-      <h2>Planos para todo tamanho</h2>
-      <p class="section-subtitle">Comece grátis. Evolua quando precisar. Sem contrato, sem burocracia, sem surpresas.</p>
+      <h2 data-i18n="plans.title">Planos para todo tamanho</h2>
+      <p class="section-subtitle" data-i18n="plans.subtitle">Comece grátis. Evolua quando precisar. Sem contrato, sem burocracia, sem surpresas.</p>
 
       <div class="planos-grid">
         <!-- Free -->
         <div class="plano-card">
           <div class="plano-header">
             <h3>Free</h3>
-            <div class="plano-price">Grátis</div>
+            <div class="plano-price" data-i18n="plans.free.price">Grátis</div>
           </div>
           <div class="plano-cta">
-            <a href="#cta" class="btn btn-secondary btn-full">Começar grátis</a>
+            <a href="#cta" class="btn btn-secondary btn-full" data-i18n="plans.free.cta">Começar grátis</a>
           </div>
           <ul class="plano-features">
-            <li>✓ Personalização completa (logo, cores, link)</li>
-            <li>✓ Até 100 pedidos/mês</li>
-            <li>✓ Até 10 mesas/comandas</li>
-            <li>✓ Cardápio ilimitado</li>
-            <li>✓ "Monte o seu" ilimitado</li>
-            <li>✓ Pedidos por link e QR Code</li>
-            <li>✓ Central de mensagens</li>
-            <li>✗ Estoque e financeiro</li>
+            <li data-i18n="plans.f.custom">✓ Personalização completa (logo, cores, link)</li>
+            <li data-i18n="plans.f.orders100">✓ Até 100 pedidos/mês</li>
+            <li data-i18n="plans.f.tables10">✓ Até 10 mesas/comandas</li>
+            <li data-i18n="plans.f.menu">✓ Cardápio ilimitado</li>
+            <li data-i18n="plans.f.build">✓ "Monte o seu" ilimitado</li>
+            <li data-i18n="plans.f.link">✓ Pedidos por link e QR Code</li>
+            <li data-i18n="plans.f.messages">✓ Central de mensagens</li>
+            <li data-i18n="plans.f.noStock">✗ Estoque e financeiro</li>
           </ul>
-          <p class="plano-note">Ideal para testar e pequenos restaurantes.</p>
+          <p class="plano-note" data-i18n="plans.free.note">Ideal para testar e pequenos restaurantes.</p>
         </div>
 
         <!-- Starter -->
         <div class="plano-card">
-          <div class="plano-highlight">Popular</div>
+          <div class="plano-highlight" data-i18n="plans.popular">Popular</div>
           <div class="plano-header">
             <h3>Starter</h3>
             <div class="plano-price">
-              <span class="plano-price-value">R$ 39,90</span>
-              <span class="plano-price-unit">/mês</span>
+              <span class="plano-price-value" data-i18n="plans.starter.price">R$ 39,90</span>
+              <span class="plano-price-unit" data-i18n="plans.unit">/mês</span>
             </div>
           </div>
           <div class="plano-cta">
-            <a href="#cta" class="btn btn-primary btn-full">Começar agora</a>
+            <a href="#cta" class="btn btn-primary btn-full" data-i18n="plans.cta">Começar agora</a>
           </div>
           <ul class="plano-features">
-            <li>✓ Personalização completa (logo, cores, link)</li>
-            <li>✓ Até 1.000 pedidos/mês</li>
-            <li>✓ Até 50 mesas/comandas</li>
-            <li>✓ Cardápio ilimitado</li>
-            <li>✓ "Monte o seu" ilimitado</li>
-            <li>✓ Pedidos por link e QR Code</li>
-            <li>✓ Central de mensagens</li>
-            <li>✗ Estoque e financeiro</li>
+            <li data-i18n="plans.f.custom">✓ Personalização completa (logo, cores, link)</li>
+            <li data-i18n="plans.f.orders1000">✓ Até 1.000 pedidos/mês</li>
+            <li data-i18n="plans.f.tables50">✓ Até 50 mesas/comandas</li>
+            <li data-i18n="plans.f.menu">✓ Cardápio ilimitado</li>
+            <li data-i18n="plans.f.build">✓ "Monte o seu" ilimitado</li>
+            <li data-i18n="plans.f.link">✓ Pedidos por link e QR Code</li>
+            <li data-i18n="plans.f.messages">✓ Central de mensagens</li>
+            <li data-i18n="plans.f.noStock">✗ Estoque e financeiro</li>
           </ul>
-          <p class="plano-note">Melhor para restaurantes em crescimento.</p>
+          <p class="plano-note" data-i18n="plans.starter.note">Melhor para restaurantes em crescimento.</p>
         </div>
 
         <!-- Premium -->
@@ -372,29 +378,29 @@
           <div class="plano-header">
             <h3>Premium</h3>
             <div class="plano-price">
-              <span class="plano-price-value">R$ 89,90</span>
-              <span class="plano-price-unit">/mês</span>
+              <span class="plano-price-value" data-i18n="plans.premium.price">R$ 89,90</span>
+              <span class="plano-price-unit" data-i18n="plans.unit">/mês</span>
             </div>
           </div>
           <div class="plano-cta">
-            <a href="#cta" class="btn btn-secondary btn-full">Começar agora</a>
+            <a href="#cta" class="btn btn-secondary btn-full" data-i18n="plans.cta">Começar agora</a>
           </div>
           <ul class="plano-features">
-            <li>✓ Personalização completa (logo, cores, link)</li>
-            <li>✓ Pedidos ilimitados</li>
-            <li>✓ Mesas/comandas ilimitadas</li>
-            <li>✓ Cardápio ilimitado</li>
-            <li>✓ "Monte o seu" ilimitado</li>
-            <li>✓ Pedidos por link e QR Code</li>
-            <li>✓ Central de mensagens</li>
-            <li>✓ Estoque e financeiro</li>
+            <li data-i18n="plans.f.custom">✓ Personalização completa (logo, cores, link)</li>
+            <li data-i18n="plans.f.ordersUnlimited">✓ Pedidos ilimitados</li>
+            <li data-i18n="plans.f.tablesUnlimited">✓ Mesas/comandas ilimitadas</li>
+            <li data-i18n="plans.f.menu">✓ Cardápio ilimitado</li>
+            <li data-i18n="plans.f.build">✓ "Monte o seu" ilimitado</li>
+            <li data-i18n="plans.f.link">✓ Pedidos por link e QR Code</li>
+            <li data-i18n="plans.f.messages">✓ Central de mensagens</li>
+            <li data-i18n="plans.f.stock">✓ Estoque e financeiro</li>
           </ul>
-          <p class="plano-note">Completo. Sem limitações.</p>
+          <p class="plano-note" data-i18n="plans.premium.note">Completo. Sem limitações.</p>
         </div>
       </div>
 
       <div class="planos-note">
-        <p><strong>A personalização visual é igual em todos os planos.</strong> O que muda é o volume de pedidos, mesas e acesso a estoque/financeiro. Comece grátis, faça upgrade quando precisar — sem pró-rata, sem complicação.</p>
+        <p><strong data-i18n="plans.note.strong">A personalização visual é igual em todos os planos.</strong> <span data-i18n="plans.note.text">O que muda é o volume de pedidos, mesas e acesso a estoque/financeiro. Comece grátis, faça upgrade quando precisar — sem pró-rata, sem complicação.</span></p>
       </div>
     </div>
   </section>
@@ -402,11 +408,11 @@
   <!-- CTA Final Section -->
   <section id="cta" class="cta-final">
     <div class="section-container">
-      <h2>Pronto para começar?</h2>
-      <p>Crie seu cardápio digital em 2 minutos. Grátis, sem cartão de crédito.</p>
+      <h2 data-i18n="cta.title">Pronto para começar?</h2>
+      <p data-i18n="cta.text">Crie seu cardápio digital em 2 minutos. Grátis, sem cartão de crédito.</p>
       <div class="cta-buttons">
-        <a href="#entrar" class="btn btn-primary btn-large">Criar minha conta agora</a>
-        <a href="#" class="btn btn-secondary btn-large">Conversar com suporte</a>
+        <a href="#entrar" class="btn btn-primary btn-large" data-i18n="cta.primary">Criar minha conta agora</a>
+        <a href="#" class="btn btn-secondary btn-large" data-i18n="cta.support">Conversar com suporte</a>
       </div>
     </div>
   </section>
@@ -417,11 +423,11 @@
       <div class="footer-content">
         <div class="footer-brand">
           <div class="footer-logo">Pede<span class="accent-strong">+</span></div>
-          <p>O cardápio digital que veste sua marca.</p>
+          <p data-i18n="footer.tagline">O cardápio digital que veste sua marca.</p>
         </div>
       </div>
       <div class="footer-bottom">
-        <p>&copy; 2026 Pede+. Todos os direitos reservados.</p>
+        <p data-i18n="footer.copy">&copy; 2026 Pede+. Todos os direitos reservados.</p>
       </div>
     </div>
   </footer>
